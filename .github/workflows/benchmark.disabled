@@ -10,7 +10,7 @@ permissions:
 jobs:
   build-with-docker:
     name: Build with Docker
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
         with:
@@ -23,7 +23,7 @@ jobs:
 
   build-with-depot:
     name: Build with Depot
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
         with:
